@@ -1,0 +1,297 @@
+/* 
+B1: Xoá gạch đầu dòng
+b2: xoá gạch dưới
+b3: Đổi màu chữ
+ */
+
+ /* "*" lay tat ca cac the html */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Giữ nguyên kích thước width của thẻ */
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.margin__top {
+    margin-top: 20px;
+}
+
+body {
+    background-color:#f8e1db;
+}
+
+ /* Header */
+
+.header {
+    /* căn giữa một nôi dung của trang web */
+    width: 90%;
+
+    /* auto:10% trống chia đôi : Trái 5% và phải 5% */
+    margin: 10px auto;
+} 
+
+.header img {
+
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header .active {
+    color: #e77559;
+}
+
+/*  2 loai the html : inline vs block.
+__block: width:100% , thẻ chiếm hết 1 hàng , ko nằm chung với thẻ khác
+__inline: width: dài bằng nội dung đang chứa. các thẻ nằm kế nhau sẽ nằm trên một hàng.
+
+
+b1: Xác định li là thẻ block.
+b2: Chuyển li từ block sang inline
+ */
+.header li {
+    /* thay đổi thẻ li từ block thành inline */
+    display: inline;
+    margin-right: 25px;
+}
+
+ /* End Header */
+
+  /* carousel */
+
+.carousel {
+      height: 600px;
+
+       /* Hiện hình ở phần giữa */
+      background-image: url(../img/BG.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-radius:0 0 180px 180px;
+
+      position: relative;
+}
+
+.carousel__content {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+
+.carousel__item {
+    float: left;
+    width: 25%;
+    padding:0 20px;
+}
+
+.carousel__detail {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+ /* end carousel */
+
+/* actives */
+
+.actives {
+    margin-top: 100px;
+}
+
+.actives__title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.actives__content {
+    margin-bottom: 10px;
+}
+
+.actives__item {
+    float: left;
+    width: 25%;
+
+    padding:0 20px;
+
+}
+
+.actives__img {
+    background-image: url(../img/product1.png);
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+
+    height: 150px;
+    position: relative;
+
+    border-radius: 20px;
+
+}
+
+.actives__img:last-child {
+    background-image: url(../img/product4.png);
+}
+
+.actives__icon {
+    font-size: 15px;
+    color: red;
+    background-color: rgba(248, 225, 219, 0.925);
+    
+
+    /* Dung cho icon */
+    display: block;
+    height: 40px;
+    width: 40px;
+
+    /* Can giua chieu ngang */
+    text-align: center;
+    /* Can giua chieu doc */
+    line-height: 40px;
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.actives__detail {
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.actives__bottom {
+    text-align: center;
+}
+
+.actives__bottom h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 11px;
+}
+
+.actives__bottom p {
+    line-height: 28px;
+    margin: 11px 0 20px;
+}
+
+.actives__bottom button {
+    padding: 13px 54px;
+    border-radius: 25px;
+    border: transparent;
+
+    color: #8d8d8d;
+    background-color: rgba(141, 141, 141, 0.76);
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.actives__view {
+    text-align: center;
+}
+.actives__view button{
+    text-align: center;
+
+    color: #e76f51;
+    background-color:transparent;
+    border: 1px solid #e76f51;
+    border-radius: 25px;
+
+    padding: 13px 71px;
+}
+
+
+.actives__view button:hover {
+    background-color: #e76f51;
+    color: #ffff;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: #f8e1db;
+    border-radius: 20px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border-radius: 0 0 25px 25px;
+}
+
+.contact__left , .contact__right {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.contact__left {
+
+}
+
+.contact__right {
+
+}
+
+.contact__app , .contact__follow {
+    float: left;
+    width: 50%;
+}
+
+.contact__app , .contact__follow {
+    margin: 20px 0;
+}
+
+.contact__follow ul {
+    margin-top: 18px;
+}
+
+.contact__follow li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.contact__follow li a {
+
+}
+
+.contact__follow i {
+    font-size: 30px;
+    margin-top: 10px;
+
+    color: #e76f51;
+}
+
+.contact__app {
+
+}
+
+.contact__app__left , .contact__app__right {
+    float: left;
+    margin-top: 20px;
+}
+.contact__app__left {
+
+}
+
+.contact__app__right {
+
+}
